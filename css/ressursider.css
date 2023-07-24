@@ -1,0 +1,90 @@
+/* Base styles for all screen sizes */
+.title-ressurser {
+    font-size: 32px;
+    font-weight: 500;
+    width: 32em;
+    margin-top: 3em;
+    letter-spacing: 0.6px;
+}
+
+.subtitle {
+    font-size: 23px;
+    padding-bottom: 10px;
+    padding-top: 2em;
+}
+
+.one {
+    padding-top: 10px;
+}
+
+.ressurser ul {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.ressurser li a {
+    line-height: 2;
+    color: black;
+}
+
+.ressurser ol {
+    max-width: 60em;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ressurser {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+    padding: 0 3em;
+}
+
+/* styles for screens smaller than 900px (e.g. smartphones) */
+@media screen and (max-width: 900px) {
+    .title-ressurser {
+        font-size: 28px;
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        padding-top: 2em;
+    }
+
+    .one {
+       padding-top: 0;
+    }
+
+    .ressurser ol {
+        max-width: 100%;
+    }
+
+    .ressurser ul{
+        font-size: 18px;
+        padding: 0;
+    }
+}
+
+
+/* styles for screens between 769px and 1200px (e.g., tablets and small laptops) */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .title-ressurser {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        padding-top: 1.5em;
+    }
+
+    .ressurser ol {
+        max-width: 80%;
+    }
+}
