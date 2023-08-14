@@ -24,99 +24,50 @@
   
   /* navigation styles start here */
   .logo {
-    width: 50%;
     font-size: 32px;
+    font-weight: 300;
     color: white;
-    padding-left: 0;
-    font-weight: 400;
+    padding-left: 10px;
+    width: 191px;
+    margin: 10px auto;
+    padding-left: 6px;
   }
   
   .logo a {
     text-decoration: none;
     color: white;
   }
-
-  .va-logo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-  }
-
-  .logo {
-    grid-column: 1 / 3;
-    margin-left: 4em;
-    margin-top: 17px;
-    margin-bottom: 21px;
-    width: auto;
-    letter-spacing: 1px;
-  }
-
-  .logo a {
-    font-weight: 400;
-  }
-
-  .va {
-    width: 181px;
-    height: 81px;
-    position: absolute;
-    top: 11px;
-    left: 3em;
-   }
   
-   .va span {
-    position: absolute;
-    border-radius: 5px;
-    box-shadow: -3px 4px 2px rgba(0, 0, 0, 0.25);
-   }
-  
-   .left {
-    left: 0;
-    top: 0px;
-    background: rgb(113 182 197 / 65%);
-    transform: skewX(26deg);
-    height: 38px;
-    width: 16px;
-    transform-origin: top left;
-   }
-  
-   .center {
-    top: 0;
-    left: 39px;
-    transform: skewX(332deg);
-    transform-origin: top left;
-    background: rgb(197 244 255);
-    z-index: 999;
-    width: 15px;
-    height: 38px;
-   }
-  
-   .dot {
-    width: 10px;
-    height: 8px;
-    top: 28px;
-    left: 40px;
-    background: rgb(197 244 255);
-   }
-  
-   .right {
-    width: 15px;
-    height: 47%;
-    left: 39px;
-    background: rgb(113 182 197 / 65%);
-    transform: skewX(26deg);
-    transform-origin: top left;
-   }
-
   header {
     background: rgba(19, 93, 113);
     text-align: center;
     position: fixed;
     z-index: 999;
     width: 100%;
+    grid-template-columns: 1fr auto minmax(300px, 2.5fr) 0.3fr;
+
   }
-  
+ 
+  .va-logo {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+
+  .left,
+  .center,
+  .right,
+  .dot {
+    transform: none;
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+
   .nav-toggle {
     position: absolute !important;
     top: -9999px !important;
@@ -225,7 +176,28 @@
       display: grid;
       grid-template-columns: 2fr auto minmax(600px, 2.5fr) 0.3fr;
     }
+    
+    .va-logo {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      flex-direction: row;
+      margin-top: 1em;
+    }
 
+    .logo {
+      grid-column: 1 / 3;
+      margin-left: 3.5em;
+      margin-top: 17px;
+      margin-bottom: 21px;
+      width: 37%;
+      letter-spacing: 1px;
+    }
+
+    .logo a {
+      font-weight: 300;
+    }
+    
     nav {
       position: relative;
       text-align: right;
@@ -270,115 +242,114 @@
     nav a:hover::before {
       transform: scale(1,1);
     }
-  }
 
-  @media screen and (max-width: 1000px) {
-    .va {
-      left: 1em;
-    }
+ .va {
+  top: 28px;
+  left: 4em;
+  width: 181px;
+  height: 81px;
+  position: absolute;
+ }
 
-    .logo {
-      margin-right: 2em;
-      margin-left: 3em;
-    }
-  }
+ .va span {
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: -3px 4px 2px rgba(0, 0, 0, 0.25);
+ }
 
-  /* Footer starts here */
+ .left {
+  left: 0;
+  top: 0px;
+  background: rgb(113 182 197 / 65%);
+  transform: skewX(26deg);
+  height: 38px;
+  width: 16px;
+  transform-origin: top left;
+ }
 
-footer {
-  background-color: rgba(19, 93, 113, 0.81);
+ .center {
+  top: 0;
+  left: 39px;
+  transform: skewX(332deg);
+  transform-origin: top left;
+  background: rgb(197 244 255);
+  z-index: 999;
+  width: 15px;
+  height: 38px;
+ }
+
+ .dot {
+  width: 10px;
+  height: 8px;
+  top: 28px;
+  left: 40px;
+  background: rgb(197 244 255);
+ }
+
+ .right {
+  width: 15px;
+  height: 46%;
+  left: 39px;
+  background: rgb(113 182 197 / 65%);
+  transform: skewX(26deg);
+  transform-origin: top left;
+ }
+}
+
+.container-videos {
+  width: 90%;
+  padding: 20px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box {
+  width: 250px;
+  margin: 0 10px;
+  transition: 1s;
+}
+
+.box video {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.box:hover{
+  transform: scale(1.7);
+  z-index: 2;
+}
+
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.text {
   color: white;
-  margin-top: 2em;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: sans-serif;
+}
+.overlayFade{
+  height: 100%;
+  width:100%;
+  top:0;
+  left:0;
+}
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition:all .3s ease;
+  background-color: rgb(82 151 168);
 }
 
-.footer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  padding: 1.5em;
-}
-
-.row.primary {
-  color: white;
-  list-style: none;
-  line-height: 1.5em;
-  font-weight: 300;
-  margin-top: 1em;
-}
-
-.row.primary ul {
-  list-style: none;
-}
-
-.row.row.primary ul a {
-  text-decoration: none!important ;
-}
-
-.links ul {
-  padding: 0;
-  font-weight: 300;
-  font-size: 16px;
-  list-style: none;
-  line-height: 1.5em;
-  letter-spacing: 0.3px;
-}
-
-.second {
-  margin-top: 2.2em;
-}
-
-.links ul li:hover, .row.primary li:hover {
-  color: black;
-}
-
-.copyright {
-  padding: 0em 1em;
-  background-color: white;
-}
-
-.footer-menu{
-  float: left;
-}
-
-.footer-menu p{
-  color: #6a6a6a; 
-}
-
-.footer-menu p:hover{
-  color: #27bcda;
-}
-
-.copyright p {
-  font-size: 0.8em;
-  text-align: right;
-}
-
-/* styles for screens with a maximum width of 900px */
-@media screen and (max-width: 900px) {
-
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: center;
-  }
-
-  .row.primary ul {
-    padding: 0;
-    margin: 0;
-  }
-
-  .column.links {
-    margin-bottom: 0;
-  }
-  
-  .second.links {
-    margin-top: 0;
-  }
-
-  .copyright p {
-    text-align: left;
-  }
+.container:hover .overlay,.container:hover .overlayFade {
+  opacity: 1;
 }

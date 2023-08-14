@@ -1,10 +1,9 @@
-/* Base styles for all screen sizes */
 .title-ressurser {
     font-size: 32px;
     font-weight: 500;
     width: 32em;
-    margin-top: 3em;
     letter-spacing: 0.6px;
+    line-height: 1.5em;
 }
 
 .subtitle {
@@ -17,14 +16,16 @@
     padding-top: 10px;
 }
 
+
 .ressurser ul {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 300;
 }
 
 .ressurser li a {
     line-height: 2;
     color: black;
+    text-decoration: underline;
 }
 
 .ressurser ol {
@@ -32,7 +33,7 @@
 }
 
 .question {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 500;
 }
 
@@ -48,18 +49,20 @@
 /* styles for screens smaller than 900px (e.g. smartphones) */
 @media screen and (max-width: 900px) {
     .title-ressurser {
-        font-size: 28px;
+        font-size: 23px;
         width: 100%;
-        margin-top: 2em;
-    }
+        }
 
     .subtitle {
         font-size: 20px;
-        padding-top: 2em;
     }
 
     .one {
        padding-top: 0;
+    }
+
+    .ressurser {
+        padding: 15px;
     }
 
     .ressurser ol {

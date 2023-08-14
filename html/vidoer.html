@@ -7,11 +7,20 @@
     <meta name="description" content="Velkommen til Video for Alle.">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/vidoer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>Video For Alle - Videoer</title>
 </head>
 <body>
-    <header>
-    <h1 class="logo"><a href="/index.html">Video For Alle</a></h1> 
+  <header>
+    <div class="va-logo">
+    <div class="va">
+      <span class="left"></span>
+      <span class="center"></span>
+      <span class="dot"></span>
+      <span class="right"></span>
+    </div>
+  <h1 class="logo"><a href="#">Video for alle</a></h1> 
+</div>
   <input type="checkbox" id="nav-toggle" class="nav-toggle">
   <nav>
     <ul>
@@ -24,32 +33,149 @@
   <label for="nav-toggle" class="nav-toggle-label">
     <span></span>
   </label>
- </header>
- <footer>
-  <div class="row primary">
-    <div class="column logo-footer">
-    <h3 class="logo-csm"><a href="/index.html">Video For Alle</a></h3> 
-  </div>
-  <div class="column links">
-  <h3>Quick Links</h3>
-   <ul>
-    <li><a href="https://www.sunnaas.no/">Suunaas.no</a></li>
-    <li><a href="prosjektet.html">Prosjektet</a></li>
-    <li><a href="ressursider.html">Ressursider</a></li>
-   </ul> 
-  </div>
-  <div class="column links">
-    <h3>Tilbake til toppen</h3>
-  </div>
+    </header>
+ <main>
+  <section class="videos">
+  <h1>Oversikt videoer og illustrasjoner</h1>
+  <div class="video-grid">
+    <div class="modul1">
+        <h2>Modul 1:</h2>
+        <h2 id="sub-title">Introduksjonsside</h2>
+        <!-- <div class="container-videos"> -->
+          <div class="container">
+          <div class="box">
+         <video class="video-styles" controls width="100" height="150">
+        <track kind="subtitles" src="/vtt/modul1/Bjørn-ErikThon.vtt" srclang="no" label="Norwegian">
+        <source src="/videos/Bjørn-ErikThon.mp4" type="video/mp4"/>
+      </video>
+          <div class="overlay overlayFade">
+            <div class="text">Hvorfor video for alle?</div>
+            <!-- </div> -->
+        </div>
     </div>
+    <div class="modul2">
+      <h2>Modul 2</h2>
+      <h2 class="sub-title">Universell utforming</h2>
+      <video controls width="200" height="200">
+        <track kind="subtitles" src="/vtt/modul2/2-Barrierer-Sonja.vtt" srclang="no" label="Norwegian">
+        <source src="/videos/Module 2/2-barrierer-Sonja.mp4"  type="video/mp4"/>
+      </video>
+        <video controls width="200" height="200">
+        <source src="/videos/Module 2/2a-Om-UU-Rudolph.mp4" type="video/mp4"/>
+      <track kind="subtitles" src="/vtt/modul2/2-Rudolph.vtt" srclang="no" label="Norwegian">
+      </video>
+      <video controls width="200" height="200">
+        <track kind="subtitles" src="/vtt/modul2/2-Ytre-og-indre-faktorer-Sonja .vtt" srclang="no" label="Norwegian">
+        <source src="/videos/Module 2/2b-om-ytre-faktorer-Sonja.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="modul3">
+      <h2>Modul 3</h2>
+      <h2 class="sub-title">Systemperspektiv</h2>
+      <video controls width="200" height="200">
+        <track kind="subtitles" src="/vtt/modul3/3-Handlingsplan-pres-Sonja.vtt" srclang="no" label="Norwegian">
+        <source src="/videos/Module 3/3 Handlingsplan pres Sonja.mp4"  type="video/mp4"/>
+      </video>
+        <video controls width="200" height="200">
+          <track kind="subtitles" src="/vtt/modul3/3-systemperspektiet-pres-Sonja.vtt" srclang="no" label="Norwegian">
+          <source src="/videos/Module 3/3 Systemperspektivet Sonja pres.mp4"  type="video/mp4"/>
+        </video>
+    </div>
+          </div>
+  </div>
+  </div>
+  <div class="video-grid-2">
+  <div class="modul4">
+    <h2>Modul 4</h2>
+    <h2 class="sub-title">Det menneskelige <br>aspektet</h2>
+    <video controls width="200" height="200">
+      <track kind="subtitles" src="/vtt/modul4/4-menneskelige-perspektiv-Geir-Ove-og-Kathrin.vtt" srclang="no" label="Norwegian">
+      <source src="/videos/Module 4/4 - menneskelige perspektiv - Geir Ove og Kathrin.mp4"  type="video/mp4"/>
+    </video>
+  </div>
+  <div class="modul5">
+    <h2>Modul 5</h2>
+    <h2 class="sub-title">Behandlerperspektiv</h2>
+    <video controls width="200" height="200">
+      <track kind="subtitles" src="/vtt/modul5/5-Behandlerpersepktivet-Tuva.vtt" srclang="no" label="Norwegian">
+      <source src="/videos/Module 5/5 - Behandlerperspektiv - Tuva.mp4"  type="video/mp4"/>
+    </video>
+    <video controls width="200" height="200">
+      <source src="/videos/Module 5/Vannkopper animasjont.mp4">
+    </video>
+        <video controls width="200" height="200">
+      <track kind="subtitles" src="/vtt/modul5/5 Eksempel på pas perspektiv Tuva.vtt" srclang="no" label="Norwegian">
+      <source src="/videos/Module 5/5 Eksempel på pas perspektiv Tuva.mp4"  type="video/mp4"/>
+    </video>
+      </div>
+  <div class="modul6">
+    <h2>Modul 6</h2>
+    <h2 class="sub-title">Pasientperspektiv</h2>
+    <video controls width="200" height="200">
+      <source src="/videos/Module 6/ulike barrierer for pasienter V2-1080p-230608.mp4"  type="video/mp4"/>
+    <track kind="subtitles" src="/vtt/modul5/5 Eksempel på pas perspektiv Tuva.vtt" srclang="no" label="Norwegian">
+    </video>
+  </div>
+  </div>
+</div>
+  <div class="video-grid-3">
+    <h2>Modul 7</h2>
+    <h2 class="sub-title">Råd til behandler - <br> beslutningstaker</h2>
+    <video controls width="200" height="200">
+      <source src="/videos/Module 7/Råd til behandler - Anne.mp4"  type="video/mp4"/>
+      <track kind="subtitles" src="" srclang="no" label="Norwegian">
+      </video>
+      <video controls width="200" height="200">
+        <source src="/videos/Module 7/Råd til behandler - Anne_1.mp4">
+      </video>
+      <video controls width="200" height="200">
+        <source src="/videos/Module 7/Råd til behandler - Carina.mp4">
+      </video>
+      <video controls width="200" height="200">
+        <source src="/videos/Module 7/Råd til beslutningstaker - Carina.mp4">
+      </video>
+  </div>
+</section>
+ </main>
+ <footer>
+  <div class="footer-container">
+  <div class="row primary">
+    <ul>
+    <li>Prosjekteier: Sunnaas Sykehus HF</li>
+    <li>Finansiert av Helse-SørØst</li>
+    <li>Kontakt: <br>
+      Sonja Erlenkamp (Sunnaas Sykehus HF)</li>
+    <li> E-mail: <a href = "mailto: sonerl@sunnaas.no">sonerl@sunnaas.no</a></li>
+      <li>Webutvikler: Krista Kaza</li>
+    </ul>
+  </div>
+  <div class="column links">
+  <h3>Samarbeidspartnere</h3>
+   <ul>
+    <li>Blindeforbundet</li>
+    <li>LARS (Landsforening for Ryggmargsskadde)</li>
+    <li>LHL Hjerneslag & Afasi</li>
+    <li>Norsk Helsenett</li>
+    <li>Norsk Regnesentral</li>
+  </ul> 
+  </div>
+  <div class="second links">
+  <ul>
+    <li>Universitet i Agder</li>
+    <li>Oslo Universitets Sykehus HF</li>
+    <li>Sunnas Sykehus HF</li>
+    <li>Sørlandet Sykehus HF</li>
+    <li>Sykehuset Innland HF</li>
+  </ul>
+  </div>
+</div>
   <div class="row copyright">
     <div class="footer-menu">
-      <p>Terms and Conditions</p>
-      <p>Privacy and Cookies</p>
-      <p>Web Accessibility</p>
+      <p>Disclaimer: Innholdet på nettsiden ble utarbeidet mai 2022 - mai 2023 og blir ikke oppdatert deretter</p>
     </div>
      <p>Copyright © 2023 Video For Alle</p>
   </div>
   </footer>
+  <script src="/js/videoer.js"></script>
 </body>
 </html>

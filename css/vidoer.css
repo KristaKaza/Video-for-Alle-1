@@ -1,0 +1,119 @@
+.videos h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.modul1-intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.modul1 h2, .modul2 h2, .modul3 h2, .modul4 h2, .modul5 h2, .modul6 h2, .modul7 h2{
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 21px;
+    font-weight: 400;
+} 
+
+.modul1,
+.modul2,
+.modul3,
+.modul4,
+.modul5,
+.modul6,
+.modul7 {
+margin-top: 3em;
+}
+
+/* .modul1, .video-grid-2, .video-grid-3 {
+/*     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center; */
+
+::cue {
+    color: white;
+    background-color: blue;
+    font-size: 40px;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+ }
+
+ .video-grid {
+    margin-left: 3em;
+}
+
+/* .video-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    margin-left: 5em;
+    margin-right: 5em;
+} */
+
+/* .container-videos {
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  } */
+  
+  .box {
+    width: 200px;
+    margin: 0 10px;
+    transition: 1s;
+  }
+  
+  .box video {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .box:hover{
+    transform: scale(1.7);
+  }
+
+  .container {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    display: inline-block;
+  }
+  
+  .text {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    top: 42%;
+    left: 8%;
+  }
+
+  .overlayFade{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: rgb(82 151 168);
+  }
+  
+  .container:hover .overlay,.container:hover .overlayFade {
+    opacity: 1;
+  }
