@@ -30,11 +30,6 @@
     padding-left: 0;
     font-weight: 400;
   }
-  
-  .logo a {
-    text-decoration: none;
-    color: white;
-  }
 
   .va-logo {
     display: flex;
@@ -58,10 +53,10 @@
   }
 
   .va {
-    width: 181px;
+    width: 76px;
     height: 81px;
     position: absolute;
-    top: 11px;
+    top: 6px;
     left: 3em;
    }
   
@@ -97,7 +92,7 @@
     height: 8px;
     top: 28px;
     left: 40px;
-    background: rgb(197 244 255);
+    background: #38E149;
    }
   
    .right {
@@ -223,7 +218,7 @@
   
     header {
       display: grid;
-      grid-template-columns: 2fr auto minmax(600px, 2.5fr) 0.3fr;
+      grid-template-columns: 1.1fr auto minmax(600px, 2.5fr) 0.3fr;
     }
 
     nav {

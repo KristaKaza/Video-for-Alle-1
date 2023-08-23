@@ -49,7 +49,7 @@
 /* styles for screens smaller than 900px (e.g. smartphones) */
 @media screen and (max-width: 900px) {
     .title-ressurser {
-        font-size: 23px;
+        font-size: 21px;
         width: 100%;
         }
 

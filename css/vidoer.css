@@ -31,14 +31,11 @@
 .modul6,
 .modul7 {
 margin-top: 3em;
+background-color: rgba(90, 158, 173, 0.44);
+width: fit-content;
+padding: 3em;
+border-radius: 16px;
 }
-
-/* .modul1, .video-grid-2, .video-grid-3 {
-/*     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center; */
 
 ::cue {
     color: white;
@@ -52,22 +49,6 @@ margin-top: 3em;
     margin-left: 3em;
 }
 
-/* .video-grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    justify-items: center;
-    margin-left: 5em;
-    margin-right: 5em;
-} */
-
-/* .container-videos {
-    width: 90%;
-    padding: 20px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  } */
   
   .box {
     width: 200px;
@@ -83,21 +64,29 @@ margin-top: 3em;
   
   .box:hover{
     transform: scale(1.7);
+    border-radius: 5px;
   }
 
+  .box-disabled{
+  transform: none!important;
+  transition: none;
+    
+  }
+
+  .box-disabled:hover {
+    transform: none!important;
+  }
   .container {
     position: relative;
-    width: 100px;
-    height: 200px;
+    /* width: 100px; */
     display: inline-block;
   }
   
   .text {
     color: white;
     font-size: 17px;
-    position: absolute;
-    top: 42%;
-    left: 8%;
+    position: relative;
+    margin: 20px 0 0 0;
   }
 
   .overlayFade{
@@ -116,4 +105,79 @@ margin-top: 3em;
   
   .container:hover .overlay,.container:hover .overlayFade {
     opacity: 1;
+    border-radius: 5px;
+  }
+  .container:focus-visible .overlay,.container:focus-visible .overlayFade {
+    opacity: 1;
+  }
+  .container:focus-within .overlay,.container:focus-within .overlayFade {
+    opacity: 1;
+  }
+  .container:focus-visible .box {
+    transform: scale(1.7);
+
+}  .container:focus-within .box {
+  transform: scale(1.7);
+
+}
+  
+  
+  .container-disabled {
+    pointer-events: none;
+  }
+
+  .container-disabled:hover {
+   pointer-events: none;
+   cursor: not-allowed;
+  }
+
+  .box-opened {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+     z-index:10000;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.7);
+     pointer-events: auto;
+     cursor: auto;
+
+  }
+
+  .video-opened {
+      position:fixed;
+      width: 60%!important;
+      top:51%;
+      left:51%;
+      -ms-transform:translate(-51%,-51%);
+      -webkit-transform:translate(-51%,-51%);
+      transform:translate(-51%,-51%);
+      pointer-events: all;
+   cursor: pointer;
+  }
+
+  .inner-overlay {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+
+  .play-button {
+    margin-top: 12px;
+    background: none;
+    border: 0;
+    color: white;
+    text-decoration: underline;
+    display: none;
+  }
+  .container:hover .play-button {
+    display: block;
+  }
+  .container:focus-visible .play-button {
+    display: block;
+  }
+  .container:focus-within .play-button {
+    display: block;
   }

@@ -9,25 +9,29 @@
     <link rel="stylesheet" href="/css/vidoer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>Video For Alle - Videoer</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
 </head>
 <body>
   <header>
-    <div class="va-logo">
-    <div class="va">
-      <span class="left"></span>
-      <span class="center"></span>
-      <span class="dot"></span>
-      <span class="right"></span>
-    </div>
-  <h1 class="logo"><a href="#">Video for alle</a></h1> 
+    <a href="/index.html" class="va-logo">
+      <div class="va">
+        <div class="va">
+          <span class="left"></span>
+          <span class="center"></span>
+          <span class="dot"></span>
+          <span class="right"></span>
+        </div>
+      </div>
+    </a>    
+    <h1 class="logo"><a href="/index.html">Video for alle</a></h1>
 </div>
   <input type="checkbox" id="nav-toggle" class="nav-toggle">
   <nav>
     <ul>
-      <li><a href="/index.html">Hjem</a></li>
-      <li><a href="#">Videoer</a></li>
-      <li><a href="/html/prosjektet.html">Prosjektet</a></li>
-      <li><a href="/html/ressursider.html">Ressursider</a></li>
+      <li><a href="/index.html" tabindex="2">Hjem</a></li>
+      <li><a href="#" tabindex="2">Videoer</a></li>
+      <li><a href="/html/prosjektet.html" tabindex="2">Prosjektet</a></li>
+      <li><a href="/html/ressursider.html" tabindex="2">Ressursider</a></li>
     </ul>
   </nav>
   <label for="nav-toggle" class="nav-toggle-label">
@@ -42,43 +46,85 @@
         <h2>Modul 1:</h2>
         <h2 id="sub-title">Introduksjonsside</h2>
         <!-- <div class="container-videos"> -->
-          <div class="container">
+          <div class="container" tabindex="3">
           <div class="box">
-         <video class="video-styles" controls width="100" height="150">
-        <track kind="subtitles" src="/vtt/modul1/Bjørn-ErikThon.vtt" srclang="no" label="Norwegian">
-        <source src="/videos/Bjørn-ErikThon.mp4" type="video/mp4"/>
-      </video>
+            <div class="_box">
+            <video id="video" class="video-styles, video">
+              <track kind="subtitles" src="/vtt/modul1/Bjørn-ErikThon.vtt" srclang="no" label="Norwegian">
+              <source src="/videos/Bjørn-ErikThon.mp4" type="video/mp4"/>
+            </video>
+            </div>
           <div class="overlay overlayFade">
+            <div class="inner-overlay">
             <div class="text">Hvorfor video for alle?</div>
-            <!-- </div> -->
+            <button class="play-button" tabindex="3">Play video</button>
+          </div>
         </div>
+    </div>
+          </div>
     </div>
     <div class="modul2">
       <h2>Modul 2</h2>
       <h2 class="sub-title">Universell utforming</h2>
-      <video controls width="200" height="200">
-        <track kind="subtitles" src="/vtt/modul2/2-Barrierer-Sonja.vtt" srclang="no" label="Norwegian">
-        <source src="/videos/Module 2/2-barrierer-Sonja.mp4"  type="video/mp4"/>
-      </video>
-        <video controls width="200" height="200">
-        <source src="/videos/Module 2/2a-Om-UU-Rudolph.mp4" type="video/mp4"/>
-      <track kind="subtitles" src="/vtt/modul2/2-Rudolph.vtt" srclang="no" label="Norwegian">
-      </video>
-      <video controls width="200" height="200">
-        <track kind="subtitles" src="/vtt/modul2/2-Ytre-og-indre-faktorer-Sonja .vtt" srclang="no" label="Norwegian">
-        <source src="/videos/Module 2/2b-om-ytre-faktorer-Sonja.mp4" type="video/mp4">
-      </video>
+      <div class="container" tabindex="3">
+        <div class="box">
+          <div class="_box">
+          <video id="video" class="video-styles, video" controls="controls">
+            <track kind="subtitles" src="/vtt/modul2/2-Barrierer-Sonja.vtt" srclang="no" label="Norwegian">
+            <source src="/videos/Module 2/2-barrierer-Sonja.mp4"  type="video/mp4"/>
+          </video>
+          </div>
+        <div class="overlay overlayFade">
+          <div class="inner-overlay">
+          <div class="text">Hvorfor video for alle?</div>
+          <button class="play-button" tabindex="3">Play video</button>
+        </div>
+      </div>
+        </div>
+        </div>
+        <div class="container" tabindex="3">
+          <div class="box">
+            <div class="_box">
+            <video id="video" class="video-styles, video" controls="controls">
+              <source src="/videos/Module 2/2a-Om-UU-Rudolph.mp4" type="video/mp4"/>
+              <track kind="subtitles" src="/vtt/modul2/2-Rudolph.vtt" srclang="no" label="Norwegian">
+            </video>
+            </div>
+          <div class="overlay overlayFade">
+            <div class="inner-overlay">
+            <div class="text">Hvorfor video for alle?</div>
+            <button class="play-button" tabindex="3">Play video</button>
+          </div>
+        </div>
+          </div>
+          </div>
+          <div class="container" tabindex="3">
+            <div class="box">
+              <div class="_box">
+              <video id="video" class="video-styles, video" controls="controls">
+                <track kind="subtitles" src="/vtt/modul2/2-Ytre-og-indre-faktorer-Sonja .vtt" srclang="no" label="Norwegian">
+                <source src="/videos/Module 2/2b-om-ytre-faktorer-Sonja.mp4" type="video/mp4">
+              </video>
+              </div>
+            <div class="overlay overlayFade">
+              <div class="inner-overlay">
+              <div class="text">Hvorfor video for alle?</div>
+              <button class="play-button" tabindex="3">Play video</button>
+            </div>
+          </div>
+            </div>
+            </div>
     </div>
     <div class="modul3">
       <h2>Modul 3</h2>
       <h2 class="sub-title">Systemperspektiv</h2>
       <video controls width="200" height="200">
         <track kind="subtitles" src="/vtt/modul3/3-Handlingsplan-pres-Sonja.vtt" srclang="no" label="Norwegian">
-        <source src="/videos/Module 3/3 Handlingsplan pres Sonja.mp4"  type="video/mp4"/>
+        <source src="/videos/Module 3/3-Handlingsplan-pres-Sonja.mp4"  type="video/mp4"/>
       </video>
         <video controls width="200" height="200">
           <track kind="subtitles" src="/vtt/modul3/3-systemperspektiet-pres-Sonja.vtt" srclang="no" label="Norwegian">
-          <source src="/videos/Module 3/3 Systemperspektivet Sonja pres.mp4"  type="video/mp4"/>
+          <source src="/videos/Module 3/3-Systemperspektivet-Sonja-pres.mp4"  type="video/mp4"/>
         </video>
     </div>
           </div>
@@ -90,7 +136,7 @@
     <h2 class="sub-title">Det menneskelige <br>aspektet</h2>
     <video controls width="200" height="200">
       <track kind="subtitles" src="/vtt/modul4/4-menneskelige-perspektiv-Geir-Ove-og-Kathrin.vtt" srclang="no" label="Norwegian">
-      <source src="/videos/Module 4/4 - menneskelige perspektiv - Geir Ove og Kathrin.mp4"  type="video/mp4"/>
+      <source src="/videos/Module 4/4-menneskelige-perspektiv-Geir-Ove-og-Kathrin.mp4"  type="video/mp4"/>
     </video>
   </div>
   <div class="modul5">
@@ -98,22 +144,23 @@
     <h2 class="sub-title">Behandlerperspektiv</h2>
     <video controls width="200" height="200">
       <track kind="subtitles" src="/vtt/modul5/5-Behandlerpersepktivet-Tuva.vtt" srclang="no" label="Norwegian">
-      <source src="/videos/Module 5/5 - Behandlerperspektiv - Tuva.mp4"  type="video/mp4"/>
+      <source src="/videos/Module 5/5-Behandlerperspektiv-Tuva.mp4"  type="video/mp4"/>
     </video>
     <video controls width="200" height="200">
-      <source src="/videos/Module 5/Vannkopper animasjont.mp4">
+      <source src="/videos/Module 5/Vannkopper-animasjont.mp4">
+      <track kind="subtitles" src="/vtt/modul5/5 animation.vtt" srclang="no" label="Norwegian">
     </video>
         <video controls width="200" height="200">
       <track kind="subtitles" src="/vtt/modul5/5 Eksempel på pas perspektiv Tuva.vtt" srclang="no" label="Norwegian">
-      <source src="/videos/Module 5/5 Eksempel på pas perspektiv Tuva.mp4"  type="video/mp4"/>
+      <source src="/videos/Module 5/5-Eksempel-på-pas-perspektiv-Tuva.mp4"  type="video/mp4"/>
     </video>
       </div>
   <div class="modul6">
     <h2>Modul 6</h2>
     <h2 class="sub-title">Pasientperspektiv</h2>
     <video controls width="200" height="200">
-      <source src="/videos/Module 6/ulike barrierer for pasienter V2-1080p-230608.mp4"  type="video/mp4"/>
-    <track kind="subtitles" src="/vtt/modul5/5 Eksempel på pas perspektiv Tuva.vtt" srclang="no" label="Norwegian">
+      <source src="/videos/Module 6/ulike-barrierer-for-pasienter-V2-1080p-230608.mp4"  type="video/mp4"/>
+    <track kind="subtitles" src="/vtt/Module 6/6-animation.vtt" srclang="no" label="Norwegian">
     </video>
   </div>
   </div>
