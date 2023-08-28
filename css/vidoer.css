@@ -3,7 +3,6 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 1em;
   font-size: 32px;
   font-weight: 500;
 }
@@ -20,7 +19,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 8px;
+  column-gap: 65px;
 }
 
 .video-arrow-down {
@@ -91,7 +90,8 @@
   flex-direction: row;
   column-gap: 12px;
   align-items: stretch;
-  justify-content: center;
+  padding-top: 25px;
+  justify-content: space-evenly;
 }
 
 .video-containers-2 {
@@ -105,8 +105,18 @@
 
 .video-grid-2 {
   display: flex;
+  padding-top: 20px;
   flex-direction: row;
   align-items: center;
+  column-gap: 24px;
+  justify-content: space-evenly;
+}
+
+.video-grid-3 {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .box {
