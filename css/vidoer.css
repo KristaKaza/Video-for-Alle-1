@@ -1,10 +1,21 @@
 .videos h1 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
+  margin-bottom: 13px;
+}
+
+.title-comment {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.comment {
+  font-size: 13px;
+  color: lightslategray;
 }
 
 .modul1-intro {
@@ -91,7 +102,9 @@
   column-gap: 12px;
   align-items: stretch;
   padding-top: 25px;
-  justify-content: space-evenly;
+  justify-content: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
 }
 
 .video-containers-2 {
@@ -109,7 +122,9 @@
   flex-direction: row;
   align-items: center;
   column-gap: 24px;
-  justify-content: space-evenly;
+  justify-content: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
 }
 
 .video-grid-3 {
@@ -117,6 +132,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -215,7 +231,7 @@
   cursor: auto;
 }
 
-.video-opened {
+.plyr--playing {
   position: fixed;
   width: 60% !important;
   top: 51%;
@@ -224,7 +240,11 @@
   -webkit-transform: translate(-51%, -51%);
   transform: translate(-51%, -51%);
   pointer-events: all;
-  cursor: pointer;
+  /* cursor: pointer; */
+}
+.plyr--video.plyr--hide-controls .plyr__controls {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .inner-overlay {
@@ -252,4 +272,38 @@
 }
 .container:focus-within .play-button {
   display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .video-grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .modul-2-containers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    column-gap: 4px;
+    row-gap: 23px;
+    justify-content: center;
+  }
+  .video-grid-2 {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .video-grid-3 {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }

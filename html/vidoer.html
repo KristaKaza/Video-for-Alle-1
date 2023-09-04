@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,8 +13,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <title>Video For Alle - Videoer</title>
   <link rel="icon" type="image/x-icon" href="/img/logo.png" />
-  <script src="https://cdn.jsdelivr.net/ally.js/1.4.1/ally.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
@@ -46,105 +46,98 @@
   </header>
   <main>
     <section class="videos">
-      <h1>Oversikt videoer og illustrasjoner</h1>
+      <div class="title-comment">
+        <h1>Oversikt videoer og illustrasjoner</h1>
+        <span class="comment">* Videoene kan sees på uavhengig av hverande og I rekkefølgen du ønsker</span>
+      </div>
       <div class="video-grid">
-        <div class="video-arrows">
-          <div class="modul1">
-            <h2>Modul 1:</h2>
-            <h2 id="sub-title">Introduksjonsside</h2>
-            <!-- <div class="container-videos"> -->
+        <div class="modul1">
+          <h2>Modul 1:</h2>
+          <h2 id="sub-title">Introduksjonsside</h2>
+          <!-- <div class="container-videos"> -->
+          <div class="container" tabindex="3">
+            <div class="box">
+              <div class="_box">
+                <video class="video-styles, video" controls>
+                  <track kind="subtitles" src="/vtt/modul1/Bjørn-ErikThon.vtt" srclang="no" label="Norwegian" />
+                  <source src="/videos/Bjørn-ErikThon.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="overlay overlayFade">
+                <div class="inner-overlay">
+                  <div class="text">Hvorfor video for alle?</div>
+                  <button class="play-button" tabindex="3">
+                    Vis video
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modul2">
+          <h2>Modul 2</h2>
+          <h2 id="sub-title">Universell utforming</h2>
+          <div class="modul-2-containers">
             <div class="container" tabindex="3">
               <div class="box">
                 <div class="_box">
-                  <video id="video" class="video-styles, video" controls>
-                    <track kind="subtitles" src="/vtt/modul1/Bjørn-ErikThon.vtt" srclang="no" label="Norwegian" />
-                    <source src="/videos/Bjørn-ErikThon.mp4" type="video/mp4" />
+                  <video class="video-styles, video" controls>
+                    <track kind="subtitles" src="/vtt/modul2/2-Rudolph.vtt" srclang="no" label="Norwegian" />
+                    <source src="/videos/Module 2/2a-Om-UU-Rudolph.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="overlay overlayFade">
                   <div class="inner-overlay">
-                    <div class="text">Hvorfor video for alle?</div>
+                    <div class="text">Hvorfor universell utforming?</div>
                     <button class="play-button" tabindex="3">
-                      Play video
+                      Vis video
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container" tabindex="3">
+              <div class="box">
+                <div class="_box">
+                  <video class="video-styles, video" controls="controls">
+                    <track kind="subtitles" src="/vtt/modul2/2-Ytre-og-indre-faktorer-Sonja .vtt" srclang="no"
+                      label="Norwegian" />
+                    <source src="/videos/Module 2/2b-om-ytre-faktorer-Sonja.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="overlay overlayFade">
+                  <div class="inner-overlay">
+                    <div class="text">
+                      Hvilke barrierer finner vi i videotjenester?
+                    </div>
+                    <button class="play-button" tabindex="3">
+                      Vis video
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container" tabindex="3">
+              <div class="box">
+                <div class="_box">
+                  <video class="video-styles, video" controls="controls">
+                    <source src="/videos/Module 2/2-barrierer-Sonja.mp4" type="video/mp4" />
+                    <track kind="subtitles" src="/vtt/modul2/2-Barrierer-Sonja.vtt" srclang="no" label="Norwegian" />
+                  </video>
+                </div>
+                <div class="overlay overlayFade">
+                  <div class="inner-overlay">
+                    <div class="text">
+                      Hvilke faktorer påvirker universell utforming?
+                    </div>
+                    <button class="play-button" tabindex="3">
+                      Vis video
                     </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="symbol small">→</div>
-        </div>
-        <div class="video-arrows">
-          <div class="video-arrow-down">
-            <div class="modul2">
-              <h2>Modul 2</h2>
-              <h2 id="sub-title">Universell utforming</h2>
-              <div class="modul-2-containers">
-                <div class="container" tabindex="3">
-                  <div class="box">
-                    <div class="_box">
-                      <video id="video" class="video-styles, video" controls="controls">
-                        <track kind="subtitles" src="/vtt/modul2/2-Rudolph.vtt" srclang="no" label="Norwegian" />
-                        <source src="/videos/Module 2/2a-Om-UU-Rudolph.mp4" type="video/mp4" />
-                      </video>
-                    </div>
-                    <div class="overlay overlayFade">
-                      <div class="inner-overlay">
-                        <div class="text">Hvorfor universell utforming?</div>
-                        <button class="play-button" tabindex="3">
-                          Play video
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="container" tabindex="3">
-                  <div class="box">
-                    <div class="_box">
-                      <video id="video" class="video-styles, video" controls="controls">
-                        <source src="/videos/Module 2/2-barrierer-Sonja.mp4" type="video/mp4" />
-                        <track kind="subtitles" src="/vtt/modul2/2-Barrierer-Sonja.vtt" srclang="no"
-                          label="Norwegian" />
-                      </video>
-                    </div>
-                    <div class="overlay overlayFade">
-                      <div class="inner-overlay">
-                        <div class="text">
-                          Hvilke faktorer påvirker universell utforming?
-                        </div>
-                        <button class="play-button" tabindex="3">
-                          Play video
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="container" tabindex="3">
-                  <div class="box">
-                    <div class="_box">
-                      <video id="video" class="video-styles, video" controls="controls">
-                        <track kind="subtitles" src="/vtt/modul2/2-Ytre-og-indre-faktorer-Sonja .vtt" srclang="no"
-                          label="Norwegian" />
-                        <source src="/videos/Module 2/2b-om-ytre-faktorer-Sonja.mp4" type="video/mp4" />
-                      </video>
-                    </div>
-                    <div class="overlay overlayFade">
-                      <div class="inner-overlay">
-                        <div class="text">
-                          Hvilke barrierer finner vi i videotjenester?
-                        </div>
-                        <button class="play-button" tabindex="3">
-                          Play video
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="symbol small">↓</div>
-          </div>
-          <div class="symbol small">→</div>
         </div>
         <div class="modul3">
           <h2>Modul 3</h2>
@@ -153,7 +146,26 @@
             <div class="container" tabindex="3">
               <div class="box">
                 <div class="_box">
-                  <video id="video" class="video-styles, video" controls="controls">
+                  <video class="video-styles, video" controls="controls">
+                    <track kind="subtitles" src="/vtt/modul3/3-systemperspektiet-pres-Sonja.vtt" srclang="no"
+                      label="Norwegian" />
+                    <source src="/videos/Module 3/3-Systemperspektivet-Sonja-pres.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="overlay overlayFade">
+                  <div class="inner-overlay">
+                    <div class="text">Hva slags tiltak kan gjøres?</div>
+                    <button class="play-button" tabindex="3">
+                      Vis video
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container" tabindex="3">
+              <div class="box">
+                <div class="_box">
+                  <video class="video-styles, video" controls="controls">
                     <track kind="subtitles" src="/vtt/modul3/3-Handlingsplan-pres-Sonja.vtt" srclang="no"
                       label="Norwegian" />
                     <source src="/videos/Module 3/3-Handlingsplan-pres-Sonja.mp4" type="video/mp4" />
@@ -165,26 +177,7 @@
                       Hva er systemiske barrierer for videotjenester?
                     </div>
                     <button class="play-button" tabindex="3">
-                      Play video
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container" tabindex="3">
-              <div class="box">
-                <div class="_box">
-                  <video id="video" class="video-styles, video" controls="controls">
-                    <track kind="subtitles" src="/vtt/modul3/3-systemperspektiet-pres-Sonja.vtt" srclang="no"
-                      label="Norwegian" />
-                    <source src="/videos/Module 3/3-Systemperspektivet-Sonja-pres.mp4" type="video/mp4" />
-                  </video>
-                </div>
-                <div class="overlay overlayFade">
-                  <div class="inner-overlay">
-                    <div class="text">Hva slags tiltak kan gjøres?</div>
-                    <button class="play-button" tabindex="3">
-                      Play video
+                      Vis video
                     </button>
                   </div>
                 </div>
@@ -201,42 +194,7 @@
             <div class="container" tabindex="3">
               <div class="box">
                 <div class="_box">
-                  <video id="video" class="video-styles, video" controls="controls">
-                    <track kind="subtitles" src="/vtt/modul5/5 Eksempel på pas perspektiv Tuva.vtt" srclang="no"
-                      label="Norwegian" />
-                    <source src="/videos/Module 5/5-Eksempel-på-pas-perspektiv-Tuva.mp4" type="video/mp4" />
-                  </video>
-                </div>
-                <div class="overlay overlayFade">
-                  <div class="inner-overlay">
-                    <div class="text">Hva er utfordringer for behandlere?</div>
-                    <button class="play-button" tabindex="3">Play video</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container" tabindex="3">
-              <div class="box">
-                <div class="_box">
-                  <video id="video" class="video-styles, video" controls="controls">
-                    <track kind="subtitles" src="/vtt/modul5/5 animation.vtt" srclang="no" label="Norwegian" />
-                    <source src="/videos/Module 5/Vannkopper-animasjont.mp4" type="video/mp4" />
-                  </video>
-                </div>
-                <div class="overlay overlayFade">
-                  <div class="inner-overlay">
-                    <div class="text">
-                      Ett eksempel: hvorfor bør vi lytte til pasienten?
-                    </div>
-                    <button class="play-button" tabindex="3">Play video</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container" tabindex="3">
-              <div class="box">
-                <div class="_box">
-                  <video id="video" class="video-styles, video" controls="controls">
+                  <video class="video-styles, video" controls="controls">
                     <track kind="subtitles" src="/vtt/modul5/5-Behandlerpersepktivet-Tuva.vtt" srclang="no"
                       label="Norwegian" />
                     <source src="/videos/Module 5/5-Behandlerperspektiv-Tuva.mp4" type="video/mp4" />
@@ -247,39 +205,70 @@
                     <div class="text">
                       Oppsummering: hva kan behandleren gjøre
                     </div>
-                    <button class="play-button" tabindex="3">Play video</button>
+                    <button class="play-button" tabindex="3">Vis video</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container" tabindex="3">
+              <div class="box">
+                <div class="_box">
+                  <video class="video-styles, video" controls="controls">
+                    <track kind="subtitles" src="/vtt/modul5/5 animation.vtt" srclang="no" label="Norwegian" />
+                    <source src="/videos/Module 5/Vannkopper-animasjont.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="overlay overlayFade">
+                  <div class="inner-overlay">
+                    <div class="text">
+                      Ett eksempel: hvorfor bør vi lytte til pasienten?
+                    </div>
+                    <button class="play-button" tabindex="3">Vis video</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container" tabindex="3">
+              <div class="box">
+                <div class="_box">
+                  <video class="video-styles, video" controls="controls">
+                    <track kind="subtitles" src="/vtt/modul5/5 Eksempel på pas perspektiv Tuva.vtt" srclang="no"
+                      label="Norwegian" />
+                    <source src="/videos/Module 5/5-Eksempel-på-pas-perspektiv-Tuva.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="overlay overlayFade">
+                  <div class="inner-overlay">
+                    <div class="text">Hva er utfordringer for behandlere?</div>
+                    <button class="play-button" tabindex="3">Vis video</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-arrows">
-          <div class="symbol small"> ← </div>
-          <div class="modul4">
-            <h2>Modul 4</h2>
-            <h2 id="sub-title">Det menneskelige <br />aspektet</h2>
-            <div class="container" tabindex="3">
-              <div class="box">
-                <div class="_box">
-                  <video id="video" class="video-styles, video" controls="controls">
-                    <track kind="subtitles" src="/vtt/modul4/4-menneskelige-perspektiv-Geir-Ove-og-Kathrin.vtt"
-                      srclang="no" label="Norwegian" />
-                    <source src="/videos/Module 4/4-menneskelige-perspektiv-Geir-Ove-og-Kathrin.mp4" type="video/mp4" />
-                  </video>
-                </div>
-                <div class="overlay overlayFade">
-                  <div class="inner-overlay">
-                    <div class="text">
-                      Hva er utfordringer for brukerne av videotjenester?
-                    </div>
-                    <button class="play-button" tabindex="3">Play video</button>
+        <div class="modul4">
+          <h2>Modul 4</h2>
+          <h2 id="sub-title">Det menneskelige <br />aspektet</h2>
+          <div class="container" tabindex="3">
+            <div class="box">
+              <div class="_box">
+                <video class="video-styles, video" controls="controls">
+                  <track kind="subtitles" src="/vtt/modul4/4-menneskelige-perspektiv-Geir-Ove-og-Kathrin.vtt"
+                    srclang="no" label="Norwegian" />
+                  <source src="/videos/Module 4/4-menneskelige-perspektiv-Geir-Ove-og-Kathrin.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="overlay overlayFade">
+                <div class="inner-overlay">
+                  <div class="text">
+                    Hva er utfordringer for brukerne av videotjenester?
                   </div>
+                  <button class="play-button" tabindex="3">Vis video</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="symbol small">→</div>
         </div>
         <div class="modul6">
           <h2>Modul 6</h2>
@@ -287,7 +276,7 @@
           <div class="container" tabindex="3">
             <div class="box">
               <div class="_box">
-                <video id="video" class="video-styles, video" controls="controls">
+                <video class="video-styles, video" controls="controls">
                   <track kind="subtitles" src="/vtt/Module6/6-animation.vtt" srclang="no" label="Norwegian" />
                   <source src="/videos/Module 6/ulike-barrierer-for-pasienter-V2-1080p-230608.mp4" type="video/mp4" />
                 </video>
@@ -297,7 +286,7 @@
                   <div class="text">
                     Hvordan opplever pasienter videotjenester?
                   </div>
-                  <button class="play-button" tabindex="3">Play video</button>
+                  <button class="play-button" tabindex="3">Vis video</button>
                 </div>
               </div>
             </div>
@@ -315,24 +304,7 @@
             <div class="container" tabindex="3">
               <div class="box">
                 <div class="_box">
-                  <video id="video" class="video-styles, video" controls="controls">
-                    <track kind="subtitles" src="/vtt/Modul7/7-raÌ-til-behandler-Anne.vtt" srclang="no"
-                      label="Norwegian" />
-                    <source src="/videos/Module 7/Rad-til-behandler-Anne.mp4" type="video/mp4" />
-                  </video>
-                </div>
-                <div class="overlay overlayFade">
-                  <div class="inner-overlay">
-                    <div class="text">Noen gode råd til beslutningstakere</div>
-                    <button class="play-button" tabindex="3">Play video</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container" tabindex="3">
-              <div class="box">
-                <div class="_box">
-                  <video id="video" class="video-styles, video" controls="controls">
+                  <video class="video-styles, video" controls="controls">
                     <track kind="subtitles" src="/vtt/Modul7/7 Ra-til-behandler-Anne_1.vtt" srclang="no"
                       label="Norwegian" />
                     <source src="/videos/Module 7/Rad-til-behandler-Anne_1.mp4" type="video/mp4" />
@@ -341,7 +313,7 @@
                 <div class="overlay overlayFade">
                   <div class="inner-overlay">
                     <div class="text">Et godt råd til pasienter</div>
-                    <button class="play-button" tabindex="3">Play video</button>
+                    <button class="play-button" tabindex="3">Vis video</button>
                   </div>
                 </div>
               </div>
@@ -349,7 +321,24 @@
             <div class="container" tabindex="3">
               <div class="box">
                 <div class="_box">
-                  <video id="video" class="video-styles, video" controls="controls">
+                  <video class="video-styles, video" controls="controls">
+                    <track kind="subtitles" src="/vtt/Modul7/7-raÌ-til-behandler-Anne.vtt" srclang="no"
+                      label="Norwegian" />
+                    <source src="/videos/Module 7/Rad-til-behandler-Anne.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="overlay overlayFade">
+                  <div class="inner-overlay">
+                    <div class="text">Noen gode råd til beslutningstakere</div>
+                    <button class="play-button" tabindex="3">Vis video</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container" tabindex="3">
+              <div class="box">
+                <div class="_box">
+                  <video class="video-styles, video" controls="controls">
                     <track kind="subtitles" src="/vtt/Modul7/7 RaÌd til behandler - Carina.vtt" srclang="no"
                       label="Norwegian" />
                     <source src="/videos/Module 7/Rad-til-behandler-Carina.mp4" type="video/mp4" />
@@ -358,7 +347,7 @@
                 <div class="overlay overlayFade">
                   <div class="inner-overlay">
                     <div class="text">Noen gode råd til en behandler</div>
-                    <button class="play-button" tabindex="3">Play video</button>
+                    <button class="play-button" tabindex="3">Vis video</button>
                   </div>
                 </div>
               </div>
@@ -366,7 +355,7 @@
             <div class="container" tabindex="3">
               <div class="box">
                 <div class="_box">
-                  <video id="video" class="video-styles, video" controls="controls">
+                  <video class="video-styles, video" controls="controls">
                     <track kind="subtitles" src="/vtt/Modul7/7 Rad-til-beslutningstaker-Carina.vtt" srclang="no"
                       label="Norwegian" />
                     <source src="/videos/Module 7/Rad-til-beslutningstaker-Carina.mp4" type="video/mp4" />
@@ -375,7 +364,7 @@
                 <div class="overlay overlayFade">
                   <div class="inner-overlay">
                     <div class="text">Noen gode råd til en behandler</div>
-                    <button class="play-button" tabindex="3">Play video</button>
+                    <button class="play-button" tabindex="3">Vis video</button>
                   </div>
                 </div>
               </div>

@@ -1,93 +1,109 @@
 .title-ressurser {
-    font-size: 32px;
-    font-weight: 500;
-    width: 32em;
-    letter-spacing: 0.6px;
-    line-height: 1.5em;
+  font-size: 30px;
+  font-weight: 500;
+  width: 32em;
+  letter-spacing: 0.6px;
+  line-height: 1.5em;
 }
 
 .subtitle {
-    font-size: 23px;
-    padding-bottom: 10px;
-    padding-top: 2em;
+  font-size: 23px;
+  padding-bottom: 10px;
+  padding-top: 2em;
 }
 
 .one {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
-
 .ressurser ul {
-    font-size: 1.25rem;
-    font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .ressurser li a {
-    line-height: 2;
-    color: black;
-    text-decoration: underline;
+  line-height: 2;
+  color: black;
+  text-decoration: underline;
 }
 
 .ressurser ol {
-    max-width: 60em;
+  max-width: 60em;
 }
 
 .question {
-    font-size: 21px;
-    font-weight: 500;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .ressurser {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: stretch;
-    padding: 0 3em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: stretch;
+  padding: 0 3em;
 }
 
 /* styles for screens smaller than 900px (e.g. smartphones) */
 @media screen and (max-width: 900px) {
-    .title-ressurser {
-        font-size: 21px;
-        width: 100%;
-        }
+  .title-ressurser {
+    font-size: 21px;
+    width: 100%;
+  }
 
-    .subtitle {
-        font-size: 20px;
-    }
+  .subtitle {
+    font-size: 20px;
+  }
 
-    .one {
-       padding-top: 0;
-    }
+  .one {
+    padding-top: 0;
+  }
 
-    .ressurser {
-        padding: 15px;
-    }
+  .ressurser {
+    padding: 0 15px;
+  }
 
-    .ressurser ol {
-        max-width: 100%;
-    }
+  .ressurser ol {
+    max-width: 100%;
+  }
 
-    .ressurser ul{
-        font-size: 18px;
-        padding: 0;
-    }
+  .ressurser ul {
+    font-size: 18px;
+    padding: 0;
+  }
 }
-
 
 /* styles for screens between 769px and 1200px (e.g., tablets and small laptops) */
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-    .title-ressurser {
-        font-size: 28px;
-    }
+  .title-ressurser {
+    font-size: 28px;
+  }
 
-    .subtitle {
-        font-size: 20px;
-        padding-top: 1.5em;
-    }
+  .subtitle {
+    font-size: 20px;
+    padding-top: 1.5em;
+  }
 
-    .ressurser ol {
-        max-width: 80%;
-    }
+  .ressurser ol {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .title-ressurser {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .ressurser li a {
+    font-size: 1.7rem;
+  }
+
+  .question {
+    font-size: 1.7rem;
+  }
 }
