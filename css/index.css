@@ -33,7 +33,7 @@
 }
 
 .container img {
-  width: 35%;
+  width: 32%;
 }
 
 .oversikt-container {
@@ -128,7 +128,7 @@
   font-weight: 500;
 }
 
-.fortsett h4 a:hover {
+.fortsett h3 a:hover {
   text-decoration: underline;
 }
 
