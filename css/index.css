@@ -41,7 +41,7 @@
   width: 68em;
   border-radius: 29px;
   padding: 2em;
-  margin-left: 14em;
+  margin-left: 18em;
   margin-top: 2em;
 }
 
@@ -71,7 +71,7 @@
   align-items: stretch;
   width: 62em;
   align-content: center;
-  margin-left: 15em;
+  margin-left: 18em;
   margin-top: 2em;
 }
 
@@ -104,7 +104,7 @@
   font-size: 23px;
   font-weight: 400;
   letter-spacing: 0.6px;
-  margin: 1em 0 0 10.4em;
+  margin: 1em 0 0 12.4em;
 }
 
 .oversikt-videoer img {
