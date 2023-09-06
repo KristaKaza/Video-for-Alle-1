@@ -118,9 +118,9 @@
 
 .video-grid-2 {
   display: flex;
-  padding-top: 20px;
+  padding-top: 50px;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   column-gap: 24px;
   justify-content: center;
   column-gap: 50px;
