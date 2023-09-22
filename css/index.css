@@ -36,12 +36,18 @@
   width: 32%;
 }
 
+.text-centered {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .oversikt-container {
   background-color: rgba(139, 198, 211, 0.29);
   width: 68em;
   border-radius: 29px;
   padding: 2em;
-  margin-left: 18em;
   margin-top: 2em;
 }
 
@@ -71,7 +77,6 @@
   align-items: stretch;
   width: 62em;
   align-content: center;
-  margin-left: 18em;
   margin-top: 2em;
 }
 
@@ -154,9 +159,9 @@
 
   .oversikt-container,
   .veiviseren-container {
-    width: 62em;
+    width: auto;
     padding: 2em;
-    margin: 1em 5em;
+    margin: 10px;
   }
 
   .oversikt-videoer h2 {
@@ -191,20 +196,20 @@
     width: auto;
   }
 
-  .oversikt-container {
+  /*  .oversikt-container {
     margin: 0 75px;
     width: auto;
   }
-
-  .veiviseren-container {
+ */
+  /*  .veiviseren-container {
     padding: 10px 55px;
     width: auto;
     margin: 0;
-  }
+  } */
 
-  .oversikt-videoer {
+  /*   .oversikt-videoer {
     padding: 10px 50px;
-  }
+  } */
 
   .oversikt-videoer h2 {
     margin: 0;
@@ -247,8 +252,8 @@
   }
 
   .oversikt-container {
-    width: 100%;
-    margin-left: 0;
+    width: auto;
+    margin: 10px;
   }
 
   .oversikt-container h2 {
@@ -319,7 +324,6 @@
     border-radius: 29px;
     padding: 2em;
     display: flex;
-    margin-left: 14em;
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -332,10 +336,6 @@
   .veiviseren-title,
   .oversikt-videoer h2 {
     font-size: 2rem;
-  }
-
-  .oversikt-videoer h2 {
-    margin: 1em 0 0 7.4em;
   }
 
   .oversikt-container li,
