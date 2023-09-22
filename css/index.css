@@ -146,15 +146,16 @@
   .title-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     padding-top: 1em;
-    margin: 0 3em;
-    column-gap: 7em;
+    justify-content: center;
+    margin: 0 6em;
+    column-gap: 4em;
   }
 
   .title-container p {
-    width: 37em;
+    width: auto;
   }
 
   .oversikt-container,
@@ -162,6 +163,10 @@
     width: auto;
     padding: 2em;
     margin: 10px;
+  }
+
+  .veiviseren-container {
+    width: 53em;
   }
 
   .oversikt-videoer h2 {
@@ -174,42 +179,6 @@
     display: block;
     margin: 0;
   }
-
-  .title-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 50px;
-    align-content: flex-start;
-  }
-
-  .container img {
-    width: 30%;
-  }
-
-  .title-container p {
-    width: auto;
-    margin-top: 1em;
-  }
-
-  .velkommen h1 {
-    width: auto;
-  }
-
-  /*  .oversikt-container {
-    margin: 0 75px;
-    width: auto;
-  }
- */
-  /*  .veiviseren-container {
-    padding: 10px 55px;
-    width: auto;
-    margin: 0;
-  } */
-
-  /*   .oversikt-videoer {
-    padding: 10px 50px;
-  } */
 
   .oversikt-videoer h2 {
     margin: 0;
@@ -248,7 +217,9 @@
   }
 
   .title-container {
+    flex-wrap: wrap;
     padding: 0;
+    margin: 1em;
   }
 
   .oversikt-container {
